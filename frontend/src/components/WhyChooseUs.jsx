@@ -1,7 +1,7 @@
 import React from "react";
 import iconMoney from "../assets/shapes/circle-dollar-sign.svg";
 import iconDesign from "../assets/shapes/paintbrush-2.svg";
-import iconMarketing from "../assets/shapes/linkedin.svg";
+import iconMarketing from "../assets/shapes/Linkedin.svg";
 
 export default function WhyChooseUs() {
   const items = [
