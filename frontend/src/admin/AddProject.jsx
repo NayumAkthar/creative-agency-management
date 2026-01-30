@@ -17,7 +17,7 @@ export default function AddProject() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/uploads/image",
+        "https://creative-agency-management.onrender.com/api/uploads/image",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" }
@@ -44,7 +44,7 @@ export default function AddProject() {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/projects/create", newProject);
+      await axios.post("https://creative-agency-management.onrender.com/api/projects/create", newProject);
       alert("Project added successfully!");
 
       // Reset form

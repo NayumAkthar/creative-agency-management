@@ -78,7 +78,7 @@ export default function ProjectsSection() {
             }}
           >
             <img
-              src={`http://localhost:5000/uploads/${project.image}`}
+              src={`https://creative-agency-management.onrender.com/uploads/${project.image}`}
               alt={project.title}
               style={{
                 width: "100%",

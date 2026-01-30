@@ -7,7 +7,7 @@ export default function ViewClients() {
   // Fetch clients
   const fetchClients = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/clients/all");
+      const res = await axios.get("https://creative-agency-management.onrender.com/api/clients/all");
       setClients(res.data.data);
     } catch (err) {
       console.error(err);
@@ -24,7 +24,7 @@ export default function ViewClients() {
     if (!confirm("Are you sure you want to delete this client?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/clients/${id}`);
+      await axios.delete(`https://creative-agency-management.onrender.com/api/clients/${id}`);
 
       // Filter deleted client from UI
       setClients(clients.filter((c) => c._id !== id));
@@ -60,7 +60,7 @@ export default function ViewClients() {
             }}
           >
             <img
-              src={`http://localhost:5000/uploads/${client.image}`}
+              src={`https://creative-agency-management.onrender.com/uploads/${client.image}`}
               alt={client.name}
               style={{
                 width: "100px",

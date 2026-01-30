@@ -7,7 +7,7 @@ export default function Contacts() {
   // Fetch contact form data
   const fetchContacts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/contact/all");
+      const res = await axios.get("https://creative-agency-management.onrender.com/api/contact/all");
       setContacts(res.data.data);
     } catch (err) {
       console.error(err);

@@ -18,7 +18,7 @@ export default function AddClient() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/uploads/image",
+        "https://creative-agency-management.onrender.com/api/uploads/image",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" }
@@ -47,7 +47,7 @@ export default function AddClient() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/clients/create",
+        "https://creative-agency-management.onrender.com/api/clients/create",
         newClient
       );
 

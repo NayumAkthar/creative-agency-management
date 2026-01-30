@@ -7,7 +7,7 @@ export default function Subscribers() {
   // Fetch newsletter subscribers
   const fetchSubscribers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/newsletter/all");
+      const res = await axios.get("https://creative-agency-management.onrender.com/api/newsletter/all");
       setSubscribers(res.data.data);
     } catch (err) {
       console.error(err);

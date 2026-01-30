@@ -19,7 +19,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/contact/submit", form);
+      await axios.post("https://creative-agency-management.onrender.com/api/contact/submit", form);
       alert("Form submitted successfully!");
 
       setForm({

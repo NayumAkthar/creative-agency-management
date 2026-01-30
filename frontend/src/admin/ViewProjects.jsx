@@ -7,7 +7,7 @@ export default function ViewProjects() {
   // Fetch projects
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/projects/all");
+      const res = await axios.get("https://creative-agency-management.onrender.com/api/projects/all");
       setProjects(res.data.data);
     } catch (err) {
       console.error(err);
@@ -24,7 +24,7 @@ export default function ViewProjects() {
     if (!confirm("Are you sure you want to delete this project?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/projects/${id}`);
+      await axios.delete(`https://creative-agency-management.onrender.com/api/projects/${id}`);
 
       // Remove from UI
       setProjects(projects.filter((p) => p._id !== id));
@@ -59,7 +59,7 @@ export default function ViewProjects() {
             }}
           >
             <img
-              src={`http://localhost:5000/uploads/${project.image}`}
+              src={`https://creative-agency-management.onrender.com/uploads/${project.image}`}
               alt={project.title}
               style={{
                 width: "100%",

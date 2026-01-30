@@ -81,7 +81,7 @@ export default function ClientsSection() {
             }}
           >
             <img
-              src={`http://localhost:5000/uploads/${client.image}`}
+              src={`https://creative-agency-management.onrender.com/uploads/${client.image}`}
               alt={client.name}
               style={{
                 width: "90px",
