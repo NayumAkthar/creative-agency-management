@@ -87,7 +87,7 @@ export default function Hero() {
               marginBottom: "30px",
             }}
           >
-            We build modern web experiences for businesses and brands.  
+            We build modern buildings experiences for businesses, houses and brands.  
             High-quality design, fast delivery, and affordable services.
           </p>
 

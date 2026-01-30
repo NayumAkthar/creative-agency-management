@@ -62,9 +62,8 @@ export default function Footer() {
             Creative Agency
           </h2>
           <p style={{ opacity: 0.9, lineHeight: "1.6" }}>
-            We provide modern web design, branding solutions, digital
-            marketing and business presentation services to help companies
-            grow faster.
+           We build modern buildings experiences for businesses, houses and brands.  
+            High-quality design, fast delivery, and affordable services.
           </p>
         </div>
 
